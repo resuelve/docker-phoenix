@@ -1,5 +1,5 @@
 FROM resuelve/elixir
-MAINTAINER Alvaro Lizama Molina <alizama@resuelve.md>
+MAINTAINER Alvaro Lizama Molina <alizama@resuelve.mx>
 RUN apk --no-cache add -U nodejs-current nodejs-current-npm inotify-tools \
     && mix local.hex --force \
     && mix local.rebar --force \
