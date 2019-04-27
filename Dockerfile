@@ -1,7 +1,7 @@
 FROM resuelve/elixir:1.7.4
 MAINTAINER Alvaro Lizama Molina <alizama@resuelve.mx>
 RUN apk --no-cache add -U nodejs nodejs-npm inotify-tools libsass libsass-dev sassc \
-    && mix archive.install hex phx_new
+    && mix archive.install hex phx_new --force
 
 ENV QT_QPA_PLATFORM=offscreen
 
